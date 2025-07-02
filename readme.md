@@ -66,3 +66,9 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
+
+
+#docker
+docker build -t apigoku .
+ocker run -p 8000:8000 apigoku
+docker rm -f $(docker ps -qa)

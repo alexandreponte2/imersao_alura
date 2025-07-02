@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    container_name: apigoku_api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount the current directory to the container's /app directory
+      # This allows for live code reloading and database persistence.
+      - .:/app
+    # The command overrides the Dockerfile's CMD to enable --reload for developmentdocke
