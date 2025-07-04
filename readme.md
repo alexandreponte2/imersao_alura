@@ -72,3 +72,17 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 docker build -t apigoku .
 ocker run -p 8000:8000 apigoku
 docker rm -f $(docker ps -qa)
+
+
+```
+sh
+gcloud auth login
+gcloud config set project project-id
+gcloud run deploy --port=8000
+
+```
+
+palavras
+marvel
+ellis
+yaml
